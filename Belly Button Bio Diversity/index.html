@@ -7,6 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -21,7 +31,25 @@
     <div class="row">
       <div class="col-md-2">
         <div class="well">
-          <h5>Test Subject ID No.:</h5>
+         
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Test Subject ID No.:
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">OTU 1167/a>
+              <a class="dropdown-item" href="#">OTU 2859</a>
+              <a class="dropdown-item" href="#">OTU 482</a>
+            </div>
+          </div> 
+          
+
+
+
+
+          
+
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
@@ -50,6 +78,7 @@
   <script src="hhttp://robdunnlab.com/projects/belly-button-biodiversity.js"></script>
   <script src="./static/js/app.js"></script>
   <script src="./static/js/bonus.js"></script>
+  <script src="plot.js"></script>
   
 </body>
 
